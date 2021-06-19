@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Index of public-notes</title>
+	<title>艾尔斯伯格悖论</title>
 	<meta name='Generator' content='Zim 0.73.5'>
 	<style type='text/css'>
 		a          { text-decoration: none      }
@@ -40,11 +40,11 @@
 
 <!-- Header -->
 <div class='header'>
-	[ <span class='insen'>Prev</span> ]
+	[ <a href='./Zim-wiki导出模板.html'>Prev</a> ]
 
-	[ <a href='#index'>Index</a> ]
+	[ <a href='../index.html'>Index</a> ]
 
-	[ <span class='insen'>Next</span> ]
+	[ <a href='../哔哩哔哩.html'>Next</a> ]
 </div>
 
 <hr />
@@ -53,42 +53,151 @@
 
 <div class='pages'>
 	<div class='heading'>
-	<h1>Index of public-notes <a name='index'></a></h1>
+	<h1>艾尔斯伯格悖论 <a name='其他:艾尔斯伯格悖论'></a></h1>
 	</div>
 
 	<div class='content'>
-	<ul>
-<li><a href="./Python.html" title="Python" class="page">Python</a>
-<ul>
-<li><a href="./Python/资料.html" title="资料" class="page">资料</a></li>
-</ul>
-</li>
-<li><a href="./Ubuntu.html" title="Ubuntu" class="page">Ubuntu</a></li>
-<li><a href="./健康.html" title="健康" class="page">健康</a>
-<ul>
-<li><a href="./健康/辣椒.html" title="辣椒" class="page">辣椒</a></li>
-</ul>
-</li>
-<li><a href="./其他.html" title="其他" class="page">其他</a>
-<ul>
-<li><a href="./其他/56种性别.html" title="56种性别" class="page">56种性别</a></li>
-<li><a href="./其他/Lorem_Ipsum.html" title="Lorem Ipsum" class="page">Lorem Ipsum</a></li>
-<li><a href="./其他/Zim-wiki导出模板.html" title="Zim-wiki导出模板" class="page">Zim-wiki导出模板</a></li>
-<li><a href="./其他/艾尔斯伯格悖论.html" title="艾尔斯伯格悖论" class="page">艾尔斯伯格悖论</a></li>
-</ul>
-</li>
-<li><a href="./哔哩哔哩.html" title="哔哩哔哩" class="page">哔哩哔哩</a>
-<ul>
-<li><a href="./哔哩哔哩/收藏夹导出.html" title="收藏夹导出" class="page">收藏夹导出</a></li>
-</ul>
-</li>
-<li><a href="./哲学.html" title="哲学" class="page">哲学</a>
-<ul>
-<li><a href="./哲学/动与静.html" title="动与静" class="page">动与静</a></li>
-</ul>
-</li>
-<li><a href="./案件.html" title="案件" class="page">案件</a></li>
-</ul>
+	<p>
+Created Friday 18 June 2021
+</p>
+
+<h4>启示</h4>
+
+<p>
+一旦出现一点点不清晰，人的直觉就有可能出错。所有做决策时应当拿纸笔好好研究。
+</p>
+
+<h4>概率论研究</h4>
+
+<p>
+设奖金x元<br>
+黑球-黄球期望：(60/90) * x = 2/3 x<br>
+红球-黑球/黄球期望：<br>
+<div style='padding-left: 30pt'>
+黑球/黄球数量：y \in [0, 60]<br>
+  1/61 * ∑ (30+y)/90 * x<br>
+= x/(61*90) ∑ (30+y)<br>
+=3660x/(61*90)<br>
+=2/3 x
+</div>
+</p>
+
+<p>
+&gt;&gt;&gt; sum([ 30 + y for y in range(61) ])<br>
+3660<br>
+&gt;&gt;&gt; 3660/61/90<br>
+0.6666666666666666
+</p>
+
+<p>
+事实上赌局A=B，C=D。
+</p>
+
+<br>
+<br>
+
+<p>
+<a href="https://zh.wikipedia.org/zh-cn/%E8%89%BE%E5%B0%94%E6%96%AF%E4%BC%AF%E6%A0%BC%E6%82%96%E8%AE%BA" title="https://zh.wikipedia.org/zh-cn/%E8%89%BE%E5%B0%94%E6%96%AF%E4%BC%AF%E6%A0%BC%E6%82%96%E8%AE%BA" class="https">https://zh.wikipedia.org/zh-cn/%E8%89%BE%E5%B0%94%E6%96%AF%E4%BC%AF%E6%A0%BC%E6%82%96%E8%AE%BA</a><br>
+艾尔斯伯格悖论（Ellsberg paradox）是决策论中的一个悖论，1961年由学者丹尼尔·艾尔斯伯格提出，以证明预期效用理论存在逻辑不一致的问题。 
+</p>
+
+<h4>概论</h4>
+
+<p>
+1961年丹尼尔·艾尔斯伯格进行了如下实验：
+</p>
+
+<p>
+一个罐中有90个球，已知其中有30个红球，其余的60个要么是黑球，要么是黄球。现从中随机抽取一个，并设计4个赌局如下：
+</p>
+
+<p>
+赌局A：若是红球，赌客得到100元；若是其它颜色得到0元。
+</p>
+
+<p>
+赌局B：若是黑球，赌客得到100元；若是其它颜色得到0元。
+</p>
+
+<p>
+赌局C：若是红球或黄球，赌客得到100元；若是其它颜色得到0元。
+</p>
+
+<p>
+赌局D：若是黑球或黄球，赌客得到100元；若是其它颜色得到0元。
+</p>
+
+<p>
+实验调查结果发现多数人在A、B之间选择A而非B；在C、D之间选择D而非C。
+</p>
+
+<h4>数式表达</h4>
+
+<p>
+假设某人估计抽到红球、黄球和黑球的机会率分别是R、Y和B。若某人坚定地选A而非B，根据期望效用理论，这是因为A的效用较高，以数式表达如下：
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+R ⋅ U ( $ 100 ) + ( 1 − R ) ⋅ U ( $ 0 ) &gt; B ⋅ U ( $ 100 ) + ( 1 − B ) ⋅ U ( $ 0 ) {\displaystyle R\cdot U(\$100)+(1-R)\cdot U(\$0)&gt;B\cdot U(\$100)+(1-B)\cdot U(\$0)} {\displaystyle R\cdot U(\$100)+(1-R)\cdot U(\$0)&gt;B\cdot U(\$100)+(1-B)\cdot U(\$0)}
+</div>
+</p>
+
+<p>
+其中， U ( ⋅ ) {\displaystyle U(\cdot )} {\displaystyle U(\cdot )}代表效用函数，上面数式可简化为：
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+R [ U ( $ 100 ) − U ( $ 0 ) ] &gt; B [ U ( $ 100 ) − U ( $ 0 ) ] {\displaystyle R[U(\$100)-U(\$0)]&gt;B[U(\$100)-U(\$0)]} {\displaystyle R[U(\$100)-U(\$0)]&gt;B[U(\$100)-U(\$0)]}
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+⟺ R &gt; B {\displaystyle \Longleftrightarrow R&gt;B\;} {\displaystyle \Longleftrightarrow R&gt;B\;}
+</div>
+</p>
+
+<p>
+因 U ( $ 100 ) &gt; U ( $ 0 ) {\displaystyle U(\$100)&gt;U(\$0)} {\displaystyle U(\$100)&gt;U(\$0)}（即坚定地选$100而非$0）
+</p>
+
+<p>
+同时，若某人坚定地选D而非C，可得到下面的不等式：
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+B ⋅ U ( $ 100 ) + Y ⋅ U ( $ 100 ) + R ⋅ U ( $ 0 ) &gt; R ⋅ U ( $ 100 ) + Y ⋅ U ( $ 100 ) + B ⋅ U ( $ 0 ) {\displaystyle B\cdot U(\$100)+Y\cdot U(\$100)+R\cdot U(\$0)&gt;R\cdot U(\$100)+Y\cdot U(\$100)+B\cdot U(\$0)} {\displaystyle B\cdot U(\$100)+Y\cdot U(\$100)+R\cdot U(\$0)&gt;R\cdot U(\$100)+Y\cdot U(\$100)+B\cdot U(\$0)}
+</div>
+</p>
+
+<p>
+简化为：
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+B [ U ( $ 100 ) − U ( $ 0 ) ] &gt; R [ U ( $ 100 ) − U ( $ 0 ) ] {\displaystyle B[U(\$100)-U(\$0)]&gt;R[U(\$100)-U(\$0)]} {\displaystyle B[U(\$100)-U(\$0)]&gt;R[U(\$100)-U(\$0)]}
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+⟺ B &gt; R {\displaystyle \Longleftrightarrow B&gt;R\;} {\displaystyle \Longleftrightarrow B&gt;R\;}
+</div>
+</p>
+
+<p>
+出现了矛盾，反映某人的选择并不符合期望效用理论。
+</p>
+
+<h4>实验结论</h4>
+
+<p>
+实验结论即艾尔斯伯格悖论，它表明人是模糊厌恶（Ambiguity averse）的，即，不喜欢他们对某一博弈的概率分布不清楚，也即，人在冒险时喜欢用已知的概率作根据，而非未知的概率。人在决策是否参赌一个不确定事件的时候，除了事件的概率之外，也考虑到它的来源。 
+</p>
 
 	</div>
 
